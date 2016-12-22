@@ -113,6 +113,8 @@ public class Anagrams extends JFrame {
         guessButton = new javax.swing.JButton();
         nextTrial = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         mainMenu = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         aboutMenuItem = new javax.swing.JMenuItem();
@@ -124,15 +126,14 @@ public class Anagrams extends JFrame {
                 exitForm(evt);
             }
         });
-        getContentPane().setLayout(new java.awt.BorderLayout());
 
         mainPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(12, 12, 12, 12));
         mainPanel.setMinimumSize(new java.awt.Dimension(297, 200));
 
         scrambledLabel.setText("Scrambled Word:");
 
-        scrambledWord.setColumns(20);
         scrambledWord.setEditable(false);
+        scrambledWord.setColumns(20);
 
         guessLabel.setDisplayedMnemonic('Y');
         guessLabel.setLabelFor(guessedWord);
@@ -177,6 +178,10 @@ public class Anagrams extends JFrame {
 
         jLabel1.setText("Prueba1");
 
+        jLabel2.setText("jLabel2");
+
+        jLabel3.setText("jLabel3");
+
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
@@ -192,6 +197,10 @@ public class Anagrams extends JFrame {
             .addGroup(mainPanelLayout.createSequentialGroup()
                 .addGap(88, 88, 88)
                 .addComponent(jLabel1)
+                .addGap(131, 131, 131)
+                .addComponent(jLabel2)
+                .addGap(133, 133, 133)
+                .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(feedbackLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 467, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(buttonsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -213,7 +222,9 @@ public class Anagrams extends JFrame {
                 .addGap(20, 20, 20)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(feedbackLabel)
-                    .addComponent(jLabel1))
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3))
                 .addGap(20, 20, 20)
                 .addComponent(buttonsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -293,6 +304,8 @@ public class Anagrams extends JFrame {
     private javax.swing.JLabel guessLabel;
     private javax.swing.JTextField guessedWord;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenuBar mainMenu;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JButton nextTrial;
